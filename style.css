@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-image: url(./beautiful-d-landscape-road-clouds-abstract-nature-backdrop-illustration-banner-concept-background-175933514.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+.background_image{
+    width: 20%;
+    height: 28vh;
+    /* border: 1px solid black; */
+    top: 60vh;
+    animation-name: car_move, second_car_move;
+    animation-delay: 0s, 7s;
+    animation-duration: 6s, 6s;
+    position: relative;
+    animation-timing-function: linear, linear;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.background_image img{
+    width: 100%;
+    height: 100%;
+    /* animation-name: car_move;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative; */
+}
+@keyframes car_move {
+    0%{left: 0%}
+    16%{left: 10%;}
+    32%{left: 20%}
+    48%{left: 30%;}
+    64%{left: 40%;}
+    80%{left: 40%;}
+    100%{left: 40%;}  
+}
+.traffic_light{
+    width: 4%;
+    height: 60vh;
+    border: 0px solid black;
+    position: relative;
+    left: 60%;
+    top: -11vh;
+    z-index: 0;
+}
+.body_light{
+    width: 100%;
+    height: 40%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: start;
+    background-color: #333;
+    margin: auto;
+}
+.body_light li{
+    width: 360%;
+    height: 31%;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+}
+.color_green{
+    background-color: lime;
+    animation-name: green_light, second_green_light;
+    animation-duration: 1s, 1s;
+    animation-delay: 2.5s, 6.5s;
+    animation-fill-mode: forwards;
+}
+.color_red{
+    background-color: darkred;
+    animation-name: red_light;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+.color_yellow{
+    background-color: darkgoldenrod;
+    animation-name: yellow_light;
+    animation-delay: 6s;
+    animation-duration: 1s;
+}
+/* #color_green_2{
+     second animation
+     animation-name: second_green_light;
+     animation-delay: 7s;
+     animation-duration: 1s;
+     animation-fill-mode: backwards;
+} */
+@keyframes green_light {
+    0%{background-color: lime;}
+    50%{background-color: darkgreen;}
+    100%{background-color: darkgreen;}
+}
+@keyframes red_light {
+    0%{background-color: darkred;}
+    50%{background-color: red;}
+    100%{background-color: darkred;}
+}
+@keyframes yellow_light {
+    0%{background-color: darkgoldenrod;}
+    50%{background-color: yellow;}
+    100%{background-color: darkgoldenrod;}
+}
+@keyframes second_green_light{
+    from{background-color: darkgreen;}
+    to{background-color: lime;}
+}
+@keyframes second_car_move {
+    0%{left: 40%;}
+    16%{left: 50%;}
+    32%{left: 60%;}
+    48%{left: 70%;}
+    64%{left: 80%;}
+    80%{left: 90%;}
+    100%{left: 100%;}
+}
+.mid_pillar{
+    width: 30%;
+    height: 54%;
+    border: 1px solid black;
+    margin: auto;
+    background-color: #333;
+}
+.bottom_pillar{
+    width: 100%;
+    height: 6%;
+    border: 1px solid black;
+    background-color: #333;
+}
